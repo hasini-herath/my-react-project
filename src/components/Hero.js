@@ -1,16 +1,17 @@
 import './Hero.css'
-import imag1 from '../assets/david-marcu-78A265wPiO4-unsplash.jpg'
+//import imag1 from '../assets/david-marcu-78A265wPiO4-unsplash.jpg'
 
-function Hero(){
+function Hero(props){
     return(
         <>
-<div className='hero'>
-    <img alt='HerpImg' src={imag1}></img>
+<div className={props.cName}>
+    <img alt='HerpImg' src={props.homeimg}></img>
 
     <div className='hero-text'>
-        <h1>Your Journey Your Story</h1>
-        <p>Choose your favourite place</p>
-<a href='/'>Travel Plan</a>
+        <h1>{props.title}</h1>
+        <p>{props.text}</p>
+        <br></br>
+<a href={props.url} className={props.btnClass}>{props.btntext}</a>
     </div>
 </div>
     </>
