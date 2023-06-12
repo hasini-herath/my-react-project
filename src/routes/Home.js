@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import imag1 from '../assets/alla-havriushenko-O-yCWCD3vb0-unsplash.jpg'
 import Destination from "../components/Destination";
 
+import Footer from "../components/Footer";
+
 function Home(){
     return(
         <>
@@ -18,7 +20,10 @@ function Home(){
         />
    
         <Destination/>
+
+        <Footer/>
         </>
+     
     )
 }
 export default Home;
